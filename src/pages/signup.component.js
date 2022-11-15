@@ -9,27 +9,41 @@ export default class SignUp extends Component {
           <input
             type="text"
             className="form-control"
-            placeholder="First name"
+            placeholder="SUrname name"
           />
         </div>
         <div className="mb-3">
-          <label>Last name</label>
+          <label>Occupation</label>
           <input type="text" className="form-control" placeholder="Last name" />
         </div>
         <div className="mb-3">
-          <label>Email address</label>
+          <label>Occupation</label>
           <input
-            type="email"
+            type="occupation"
             className="form-control"
-            placeholder="Enter email"
+            placeholder="Occupation"
           />
         </div>
         <div className="mb-3">
-          <label>Password</label>
+          <label>Place of work</label>
           <input
-            type="password"
+            type="place of work"
             className="form-control"
-            placeholder="Enter password"
+            placeholder="place of work"
+          />
+        </div>
+
+        <div className="mb-3">
+          <label>Role</label>
+          <input type="role" className="form-control" placeholder="role" />
+        </div>
+
+        <div className="mb-3">
+          <label>Address</label>
+          <input
+            type="address"
+            className="form-control"
+            placeholder="address"
           />
         </div>
         <div className="d-grid">
