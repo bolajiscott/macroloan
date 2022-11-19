@@ -11,12 +11,7 @@ const Nav = ({ handleShow }) => {
               <a href="#">Home</a>
             </p>
           </div>
-          <div className="menu-item align-elements" onClick={handleShow}>
-            <p>
-              <a href="#">Products</a>
-            </p>
-            <ArrowDownward className="arrow-down" />
-          </div>
+          <div className="menu-item align-elements" onClick={handleShow}></div>
           <div className="menu-item">
             <p>
               <a href="#">SignUp</a>

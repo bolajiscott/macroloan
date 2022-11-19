@@ -4,13 +4,14 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Login from "./pages/Login";
 import SignUp from "./pages/signup.component";
+import Home from "./pages/Home";
 function App() {
   return (
     <Router>
       <div className="App">
         <nav className="navbar navbar-expand-lg navbar-light fixed-top">
           <div className="container">
-            <Link className="navbar-brand" to={"/sign-in"}>
+            <Link className="navbar-brand" to={"/home"}>
               Macroloan
             </Link>
             <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -29,12 +30,13 @@ function App() {
             </div>
           </div>
         </nav>
-        <div className="auth-wrapper">
-          <div className="auth-inner">
+        <div className="">
+          <div className="">
             <Routes>
               <Route exact path="/" element={<Login />} />
               <Route path="/sign-in" element={<Login />} />
               <Route path="/sign-up" element={<SignUp />} />
+              <Route path="/home" element={<Home />} />
             </Routes>
           </div>
         </div>
